@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebVuln-Runner - Vulnerable App Manager</title>
-    <link rel="icon" type="image/png" href="assets/logo-bgremove.png">
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -14,30 +15,36 @@
             padding: 80px 0 70px;
             border-bottom: 1px solid #e3e7ef;
         }
+
         .feature-icon {
             font-size: 2.5rem;
             color: #2a5298;
             margin-bottom: 1rem;
         }
+
         .app-card {
             transition: transform 0.3s;
             height: 100%;
         }
+
         .app-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
+
         .navbar-brand img {
             height: 32px;
             margin-right: 10px;
         }
+
         .hero-logo {
             max-width: 350px;
             margin-bottom: 2rem;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -54,7 +61,8 @@
                     <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link" href="#applications">Applications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/yusufarbc/webvuln-runner"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/yusufarbc/webvuln-runner"><i
+                                class="fab fa-github"></i> GitHub</a></li>
                 </ul>
             </div>
         </div>
@@ -65,9 +73,11 @@
         <div class="container">
             <img src="assets/logo.png" alt="WebVuln-Runner Logo" class="hero-logo">
             <h1 class="display-4 fw-bold mb-4">WebVuln-Runner</h1>
-            <p class="lead mb-4 text-secondary">Docker-based launcher for 15+ vulnerable web app labs (Juice Shop, DVWA, WebGoat, more) with instant start.</p>
+            <p class="lead mb-4 text-secondary">Docker-based launcher for 15+ vulnerable web app labs (Juice Shop, DVWA,
+                WebGoat, more) with instant start.</p>
             <a href="#installation" class="btn btn-primary btn-lg px-5">Get Started</a>
-            <a href="https://github.com/yusufarbc/webvuln-runner" class="btn btn-outline-primary btn-lg px-5 ms-2">View on GitHub</a>
+            <a href="https://github.com/yusufarbc/webvuln-runner" class="btn btn-outline-primary btn-lg px-5 ms-2">View
+                on GitHub</a>
         </div>
     </header>
 
@@ -82,17 +92,20 @@
                 <div class="col-md-4 text-center">
                     <div class="feature-icon"><i class="fas fa-terminal"></i></div>
                     <h4>TUI Interface</h4>
-                    <p>Easy to use Text User Interface (Whiptail) for managing containers directly from your terminal.</p>
+                    <p>Easy to use Text User Interface (Whiptail) for managing containers directly from your terminal.
+                    </p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="feature-icon"><i class="fab fa-docker"></i></div>
                     <h4>Docker Powered</h4>
-                    <p>Leverages Docker to spin up isolated vulnerable environments instantly without messing up your host system.</p>
+                    <p>Leverages Docker to spin up isolated vulnerable environments instantly without messing up your
+                        host system.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
                     <h4>Security Training</h4>
-                    <p>Perfect for CTF preparation, security training, and learning about OWASP Top 10 vulnerabilities.</p>
+                    <p>Perfect for CTF preparation, security training, and learning about OWASP Top 10 vulnerabilities.
+                    </p>
                 </div>
             </div>
         </div>
@@ -111,7 +124,8 @@
                         <div class="card-body">
                             <h5 class="card-title">OWASP Juice Shop</h5>
                             <h6 class="card-subtitle mb-2 text-muted">bkimminich/juice-shop</h6>
-                            <p class="card-text">The most modern and sophisticated insecure web application! Covers the entire OWASP Top 10.</p>
+                            <p class="card-text">The most modern and sophisticated insecure web application! Covers the
+                                entire OWASP Top 10.</p>
                             <span class="badge bg-primary">Node.js</span>
                             <span class="badge bg-danger">Top 10</span>
                         </div>
@@ -122,7 +136,8 @@
                         <div class="card-body">
                             <h5 class="card-title">DVWA</h5>
                             <h6 class="card-subtitle mb-2 text-muted">vulnerables/web-dvwa</h6>
-                            <p class="card-text">Damn Vulnerable Web Application. A PHP/MySQL web application that is damn vulnerable.</p>
+                            <p class="card-text">Damn Vulnerable Web Application. A PHP/MySQL web application that is
+                                damn vulnerable.</p>
                             <span class="badge bg-primary">PHP</span>
                             <span class="badge bg-warning text-dark">Classic</span>
                         </div>
@@ -133,39 +148,43 @@
                         <div class="card-body">
                             <h5 class="card-title">OWASP WebGoat</h5>
                             <h6 class="card-subtitle mb-2 text-muted">webgoat/webgoat</h6>
-                            <p class="card-text">A deliberately insecure application that allows interested developers just to test vulnerabilities.</p>
+                            <p class="card-text">A deliberately insecure application that allows interested developers
+                                just to test vulnerabilities.</p>
                             <span class="badge bg-primary">Java</span>
                             <span class="badge bg-info text-dark">Education</span>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card app-card">
                         <div class="card-body">
                             <h5 class="card-title">bWAPP</h5>
                             <h6 class="card-subtitle mb-2 text-muted">raesene/bwapp</h6>
-                            <p class="card-text">A buggy web application. Free and open source. It helps security enthusiasts, researchers and students.</p>
+                            <p class="card-text">A buggy web application. Free and open source. It helps security
+                                enthusiasts, researchers and students.</p>
                             <span class="badge bg-primary">PHP</span>
                             <span class="badge bg-danger">100+ Vulns</span>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card app-card">
                         <div class="card-body">
                             <h5 class="card-title">OWASP Mutillidae II</h5>
                             <h6 class="card-subtitle mb-2 text-muted">citizenstig/nowasp</h6>
-                            <p class="card-text">A free, open source, deliberately vulnerable web-application providing a target for web-security enthusiast.</p>
+                            <p class="card-text">A free, open source, deliberately vulnerable web-application providing
+                                a target for web-security enthusiast.</p>
                             <span class="badge bg-primary">PHP</span>
                         </div>
                     </div>
                 </div>
-                 <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="card app-card">
                         <div class="card-body">
                             <h5 class="card-title">VulnLab</h5>
                             <h6 class="card-subtitle mb-2 text-muted">yavuzlar/vulnlab</h6>
-                            <p class="card-text">A web vulnerability lab project developed by Yavuzlar. Great for local practice.</p>
+                            <p class="card-text">A web vulnerability lab project developed by Yavuzlar. Great for local
+                                practice.</p>
                             <span class="badge bg-success">Local</span>
                         </div>
                     </div>
@@ -175,7 +194,8 @@
                         <div class="card-body">
                             <h5 class="card-title">XVWA</h5>
                             <h6 class="card-subtitle mb-2 text-muted">s4n7h0/xvwa</h6>
-                            <p class="card-text">Xtreme Vulnerable Web Application. A badly coded web application written in PHP/MySQL.</p>
+                            <p class="card-text">Xtreme Vulnerable Web Application. A badly coded web application
+                                written in PHP/MySQL.</p>
                             <span class="badge bg-primary">PHP</span>
                         </div>
                     </div>
@@ -185,7 +205,8 @@
                         <div class="card-body">
                             <h5 class="card-title">VAmPI</h5>
                             <h6 class="card-subtitle mb-2 text-muted">erev0s/vampi</h6>
-                            <p class="card-text">Vulnerable API. An API with vulnerabilities to learn about API security (OWASP API Top 10).</p>
+                            <p class="card-text">Vulnerable API. An API with vulnerabilities to learn about API security
+                                (OWASP API Top 10).</p>
                             <span class="badge bg-warning text-dark">Python/Flask</span>
                             <span class="badge bg-info text-dark">API</span>
                         </div>
@@ -196,7 +217,8 @@
                         <div class="card-body">
                             <h5 class="card-title">DVNA</h5>
                             <h6 class="card-subtitle mb-2 text-muted">appsecco/dvna</h6>
-                            <p class="card-text">Damn Vulnerable NodeJS Application. A simple NodeJS application to demonstrate vulnerabilities.</p>
+                            <p class="card-text">Damn Vulnerable NodeJS Application. A simple NodeJS application to
+                                demonstrate vulnerabilities.</p>
                             <span class="badge bg-primary">Node.js</span>
                         </div>
                     </div>
@@ -206,7 +228,8 @@
                         <div class="card-body">
                             <h5 class="card-title">DVGA</h5>
                             <h6 class="card-subtitle mb-2 text-muted">dolevf/dvga</h6>
-                            <p class="card-text">Damn Vulnerable GraphQL Application. Learn GraphQL security with this vulnerable app.</p>
+                            <p class="card-text">Damn Vulnerable GraphQL Application. Learn GraphQL security with this
+                                vulnerable app.</p>
                             <span class="badge bg-warning text-dark">Python</span>
                             <span class="badge bg-info text-dark">GraphQL</span>
                         </div>
@@ -217,7 +240,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Hackazon</h5>
                             <h6 class="card-subtitle mb-2 text-muted">rapid7/hackazon</h6>
-                            <p class="card-text">A modern vulnerable e-commerce application. Rich with features and vulnerabilities.</p>
+                            <p class="card-text">A modern vulnerable e-commerce application. Rich with features and
+                                vulnerabilities.</p>
                             <span class="badge bg-primary">PHP</span>
                             <span class="badge bg-secondary">E-commerce</span>
                         </div>
@@ -239,7 +263,8 @@
                         <div class="card-body">
                             <h5 class="card-title">OWASP Benchmark</h5>
                             <h6 class="card-subtitle mb-2 text-muted">owasp/benchmark</h6>
-                            <p class="card-text">A test suite designed to verify the speed and accuracy of vulnerability detection tools.</p>
+                            <p class="card-text">A test suite designed to verify the speed and accuracy of vulnerability
+                                detection tools.</p>
                             <span class="badge bg-primary">Java</span>
                             <span class="badge bg-secondary">Tooling</span>
                         </div>
@@ -250,7 +275,8 @@
                         <div class="card-body">
                             <h5 class="card-title">DVWS</h5>
                             <h6 class="card-subtitle mb-2 text-muted">snoopysecurity/dvws</h6>
-                            <p class="card-text">Damn Vulnerable Web Services. Practice exploiting web services and APIs.</p>
+                            <p class="card-text">Damn Vulnerable Web Services. Practice exploiting web services and
+                                APIs.</p>
                             <span class="badge bg-primary">PHP</span>
                             <span class="badge bg-info text-dark">API</span>
                         </div>
@@ -261,7 +287,8 @@
                         <div class="card-body">
                             <h5 class="card-title">DSVPWA</h5>
                             <h6 class="card-subtitle mb-2 text-muted">sgabe/dsvpwa</h6>
-                            <p class="card-text">Damn Simple Vulnerable Python Web Application. Simple and educational.</p>
+                            <p class="card-text">Damn Simple Vulnerable Python Web Application. Simple and educational.
+                            </p>
                             <span class="badge bg-warning text-dark">Python</span>
                         </div>
                     </div>
@@ -284,7 +311,7 @@
                     <pre class="bg-dark text-white p-3 rounded"><code>sudo su
 wget -O - https://raw.githubusercontent.com/yusufarbc/webvuln-runner/main/installers/debian/install.sh | bash;
 WebVuln-Runner</code></pre>
-                    
+
                     <h5 class="mt-4">RedHat / Fedora</h5>
                     <pre class="bg-dark text-white p-3 rounded"><code>sudo su
 wget -O - https://raw.githubusercontent.com/yusufarbc/webvuln-runner/main/installers/redhat/install.sh | bash;
@@ -296,7 +323,8 @@ wget -O - https://raw.githubusercontent.com/yusufarbc/webvuln-runner/main/instal
 WebVuln-Runner</code></pre>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://user-images.githubusercontent.com/77548038/211136750-f430013b-c02e-4a3a-bcfc-859dedc10527.png" alt="WebVuln-Runner Interface" class="img-fluid rounded shadow-lg">
+                    <img src="https://user-images.githubusercontent.com/77548038/211136750-f430013b-c02e-4a3a-bcfc-859dedc10527.png"
+                        alt="WebVuln-Runner Interface" class="img-fluid rounded shadow-lg">
                 </div>
             </div>
         </div>
@@ -305,11 +333,14 @@ WebVuln-Runner</code></pre>
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2025 WebVuln-Runner Project. Developed by <a href="https://github.com/yusufarbc" class="text-white text-decoration-none">yusufarbc</a>.</p>
-            <small class="text-muted">Disclaimer: These applications are intentionally vulnerable. Do not run them on production servers or exposed networks.</small>
+            <p class="mb-0">&copy; 2025 WebVuln-Runner Project. Developed by <a href="https://github.com/yusufarbc"
+                    class="text-white text-decoration-none">yusufarbc</a>.</p>
+            <small class="text-muted">Disclaimer: These applications are intentionally vulnerable. Do not run them on
+                production servers or exposed networks.</small>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
